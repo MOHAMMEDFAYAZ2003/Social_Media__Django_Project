@@ -1,0 +1,183 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.theme-layout {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Feature photo section */
+.feature-photo {
+    position: relative;
+    background-color: #333;
+    padding: 20px 0;
+}
+
+.feature-photo figure {
+    margin: 0;
+}
+
+.feature-photo img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.add-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    color: white;
+    font-size: 18px;
+}
+
+.add-btn span,
+.add-btn button {
+    margin-right: 20px;
+}
+
+/* Profile Image */
+.user-avatar figure {
+    margin: 0;
+    padding: 0;
+}
+
+.user-avatar img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Profile info section */
+.user-profile {
+    background-color: #fff;
+    margin: 30px 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.timeline-info ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.timeline-info ul li {
+    margin: 10px 0;
+}
+
+.timeline-info .admin-name h5 {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+/* Bio Section */
+.bio {
+    background-color: #B0B3B8;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.bio p {
+    line-height: 1.6;
+    color: #000405;
+}
+
+/* User Posts Section */
+.central-meta {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.photos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.photos li {
+    width: 30%;
+}
+
+.photos a {
+    display: block;
+}
+
+.photos img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Follow button */
+.follow-button {
+    background-color: #ffc0cb;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.follow-button:hover {
+    background-color: #ff77a9;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .add-btn {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .user-avatar img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .user-profile {
+        padding: 15px;
+    }
+
+    .photos li {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .user-avatar img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .timeline-info .admin-name h5 {
+        font-size: 22px;
+    }
+
+    .bio {
+        font-size: 18px;
+    }
+
+    .photos li {
+        width: 100%;
+    }
+}
